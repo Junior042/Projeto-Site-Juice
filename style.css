@@ -3,8 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: var(--back-body);
+}
+
 /*Variaveis*/
 :root {
+  --back-body: #9b5de5;
+
+  --btn-cor: #801af5;
+  --cor--opacidade: #560bad;
   --cor--link: #dee2ff;
   --back--03: #161a1d;
   --back-02: #8D99AE;
@@ -55,4 +63,128 @@ a:link {
   font-size: 28px;
   margin-left: 8.11rem;
   color: #ffffff;
+}
+
+/*conteudo*/
+.container-foto{
+  width: 100%;
+  height: 310px;
+}
+.imagem-slide{
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-left: 10%;
+  overflow: hidden;
+  background: var(--cor--opacidade);
+  
+}
+
+#imagem-vitrine{
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.9s;
+}
+
+#imagem-vitrine:hover{
+  opacity: 1.0;
+}
+.lateral{
+  width: 200px;
+
+}
+
+.conteudo{
+  display: flex;
+
+}
+
+.conteudo-tab{
+  width: 992px;
+  height: 500px;
+  margin-left: 150px;
+}
+.conteudo-01{
+  width: 992px;
+  margin: 0 auto;
+}
+.cont-product{
+    margin-left: 12px;
+    padding-left: 0px;
+    margin-top: 15px;
+    width: 992px;
+}
+.cont-primeira-fila{
+  float: left;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+.product-01:hover{
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+}
+.product-02:hover{
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+}
+
+.product-01, .product-02{
+  width: 280px;
+  height: 450px;
+  float: left;
+  background: var(--back--03);
+  transition: 0.3s;
+}
+
+
+.title-product{
+  font-family: 'Poppins';
+  font-weight: 700;
+  margin-left: 16px;
+  color: var(--cor--link);
+}
+.imagem-product{
+  width: 90%;
+  border-radius: 50%;
+  /*overflow: hidden;*/
+  margin-left: 1rem;
+}
+.img-product{
+  width: 100%;
+  display: block;
+}
+.dec-cont{
+  width: 90%;
+  margin-left: 1rem;
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+text-align: justify;
+color: #636669;
+}
+.btn span a:visited{
+  color: var(--cor--link);
+}
+
+.btn-ver{
+  background: var(--btn-cor);
+  text-decoration: none;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  transition: background 0.6s;
+}
+.btn-ver:hover{
+  background: var(--cor--opacidade);
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
 }
